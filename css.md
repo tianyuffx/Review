@@ -36,3 +36,21 @@
 ### 谈谈标准盒模型和IE盒模型
 
 ### BFC
+
+
+## 三角形 梯形
+
+
+### 一些不常用的css属性
+
+filter: drop-shadow(0 0 10px #000)
+backface-visibility
+text-rendering
+filter: grayScale(1)
+shap
+writing-mode: horizontal-tb / vertical-rl
+text-orientation: upright;
+text-combine-upright: all;
+scroll-behavior: smooth
+aspect-ratio:16/9
+requestAnimationFram(function() {})

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    var a = void 0; // 赋值undefined 因为undefined不是关键字
+    
+    // requestAnimationFram(function() {}) 定时器动画可以用这个代替
+
+    function ref() {
+      requestAnimationFram(function() {
+        ref()
+      })
+    }
+
+
+    var str = '100000000'
+    str.replace(/(?=\B(\d{3})+$)/, '') // 非单词边界
+
+    const reg = /[a-zA-Z](?=\d)/g // 匹配紧跟数字的字母
+
+    Function.prototype.myBind = function(ctx) {
+      const fn = this
+      return function() {
+        return fn.call(ctx, arguments)
+      }
+    }
+
+    Function.prototype.myCall = function(ctx, ...args) {
+      cxt = (ctx === null || ctx === undefined) ? globalThis:Object(ctx)
+      const key = Symbol('key')
+      Object.defineProperty(ctx, key, {
+        enumerable: false,
+        value: this
+      })
+      const result = ctx[key](...args)
+      return result
+    }
+
+    // window.addEventListener('wheel', wheelHandler, {
+    //   passive: false
+    // })
+
+    // 底部加载更多
+
+    // const ob = new IntersectionObserver(function(entries) {
+    //   const entry = entries[0]
+    //   if (entry.isIntersecting && !isloading) {
+    //     console.log('load more')
+    //   }
+    // }, {
+    //   // root: 
+    //   // thresholds: 0 ~ 1
+    // })
+    // ob.server(loading)
+
+    // document.addEventListener('visibilityChange', function() {
+    //   console.log(document.visibilityState)
+    // })
+
+    // new Flip() flip 动画
+  </script>
+</body>
+</html>

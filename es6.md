@@ -7,8 +7,10 @@
 ### postMessage
 
 
-### Map WeakMap Set Blob iterator generator
+### Map WeakMap Set Blob iterator generator Proxy
 
+
+## 高阶组件
 ### 什么是 Iterable 对象，与 Array 有什么区别
 
 实现了 [Symbol.iterator] 属性的对象即是 Iterable 对象，然后可以使用操作符 for...of 进行迭代
@@ -16,6 +18,8 @@
 ### Symbol
 
 ### class类静态方法
+
+## 迭代器 for in   /  for of  迭代器
 
 
 

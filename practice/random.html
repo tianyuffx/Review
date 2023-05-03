@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function randomColor() {
+      // rgb(x,x,x)
+      // const color = '#' + Math.random().toString(16).substring(2, 8)
+      var r = Math.floor(Math.random() * 256),
+        g = Math.floor(Math.random() * 256),
+        b = Math.floor(Math.random() * 256)
+      return `rgb(${r},${g},${b})`
+    }
+
+    // js存储数字：64位浮点数 存数字三部分  符号 指数 尾数 108 = -1.08 * 10^2
+    // 尾数有长度限制 52位
+  </script>
+</body>
+
+</html>
